@@ -5,11 +5,12 @@
     width: 40px;
     height: 15px;
 
-    .circle {
+    &::before {
+        content: '';
         position: absolute;
-        transition: all .5s;
-        left: 2px;
-        top: 2px;
+        transition: .5s;
+        left: 5%;
+        top: 15%;
         height: 10px;
         width: 10px;
         border-radius: 10px;
@@ -20,8 +21,8 @@
         transition: .5s all ease;
         background: rgb(189, 32, 32);
 
-        .circle {
-            left: 28px;
+        &::before {
+            left: 70%; 
         }
     }
 

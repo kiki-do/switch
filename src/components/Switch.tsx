@@ -15,9 +15,7 @@ export const Switch: FC = () => {
 
 
   return (
-       <div className={clsx(classes.wrapper, {[classes.isChecked] : isChecked})} onClick={onClick}>
-          <span className={classes.circle} />
-       </div>
+       <div className={clsx(classes.wrapper, {[classes.isChecked] : isChecked})} onClick={onClick} />
   );
 };
 
