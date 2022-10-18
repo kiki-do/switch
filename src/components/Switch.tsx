@@ -1,5 +1,6 @@
+import { useMemo } from 'react';
 import clsx from 'clsx';
-import type { FC } from 'react';
+import { FC } from 'react';
 import { useState, useCallback } from 'react';
 import classes from './Switch.module.scss';
 
@@ -13,9 +14,16 @@ export const Switch: FC = () => {
     [],
   );
 
+  const wrapperClassName = useMemo(
+    () =>
+      clsx(classes.wrapper, {
+        [classes.isChecked]: isChecked,
+      }),
+    [isChecked],
+  );
 
   return (
-       <div className={clsx(classes.wrapper, {[classes.isChecked] : isChecked})} onClick={onClick} />
+       <div className={wrapperClassName} onClick={onClick} aria-hidden />
   );
 };
 
