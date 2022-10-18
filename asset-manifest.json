@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/kiki-do/switch.git/static/css/main.57a64ca8.css",
+    "main.js": "/kiki-do/switch.git/static/js/main.5c9014f0.js",
+    "static/js/787.dd5ea308.chunk.js": "/kiki-do/switch.git/static/js/787.dd5ea308.chunk.js",
+    "index.html": "/kiki-do/switch.git/index.html",
+    "main.57a64ca8.css.map": "/kiki-do/switch.git/static/css/main.57a64ca8.css.map",
+    "main.5c9014f0.js.map": "/kiki-do/switch.git/static/js/main.5c9014f0.js.map",
+    "787.dd5ea308.chunk.js.map": "/kiki-do/switch.git/static/js/787.dd5ea308.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.57a64ca8.css",
+    "static/js/main.5c9014f0.js"
+  ]
+}
