@@ -6,18 +6,17 @@ import classes from './Switch.module.scss';
 export const Switch: FC = () => {
   const [isChecked, setIsChecked] = useState<boolean>(false);
 
-  const onClickChecked = useCallback(
+  const onClick = useCallback(
     () => {
       setIsChecked((previous) => !previous);
     },
-    [setIsChecked],
+    [],
   );
 
-  
 
   return (
-       <div className={clsx(classes.wrapper, {[classes.changeColor] : isChecked})} onClick={onClickChecked}>
-          <span className={clsx(classes.complete, {[classes.circle] : !isChecked})} />
+       <div className={clsx(classes.wrapper, {[classes.isChecked] : isChecked})} onClick={onClick}>
+          <span className={classes.circle} />
        </div>
   );
 };

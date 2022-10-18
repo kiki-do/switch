@@ -7,7 +7,7 @@
 
     .circle {
         position: absolute;
-        transition: all 1s;
+        transition: all .5s;
         left: 2px;
         top: 2px;
         height: 10px;
@@ -16,26 +16,14 @@
         background: white;
     }
 
+   &.isChecked {
+        transition: .5s all ease;
+        background: rgb(189, 32, 32);
 
-}
-
-.changeColor {
-    background: red;
-    transition: 1s all ease;
-    position: relative;
-    border-radius: 10px;
-    width: 40px;
-    height: 15px;
-
-    .complete{
-        position: absolute;
-        transition: 1s all ease;
-        right: 2px;
-        top: 2px;
-        height: 10px;
-        width: 10px;
-        border-radius: 10px;
-        background: white;
+        .circle {
+            left: 28px;
+        }
     }
 
 }
+
